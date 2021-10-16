@@ -1,0 +1,40 @@
+{
+  "name": "beautiful-nextjs-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "recoil": "^0.4.1",
+    "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^11.1.2",
+    "@types/jest": "^27.0.2",
+    "@types/react": "17.0.27",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "fork-ts-checker-webpack-plugin": "^6.3.3",
+    "jest": "27.0.1",
+    "prettier": "^2.4.1",
+    "react-recoilize": "^1.0.3",
+    "stylelint": "^13.12.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-property-sort-order-smacss": "^7.1.0",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-scss": "^3.9.2",
+    "ts-jest": "27.0.1",
+    "typescript": "^4.4.3"
+  }
+}
