@@ -8,4 +8,5 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   collectCoverage: true,
   coverageReporters: ['json-summary'],
+  testEnvironment: 'jsdom',
 };

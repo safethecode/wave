@@ -1,5 +1,4 @@
 {
-
   "extends": [
     "eslint:recommended",
     "plugin:prettier/recommended",
@@ -13,7 +12,9 @@
       { "usePrettierrc": true }
     ],
     "no-undef": "off",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "react-hooks/exhaustive-deps": "off",
+    "@next/next/no-img-element": "off"
   },
   "settings": {
     "next": {

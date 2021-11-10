@@ -1,1 +1,1 @@
-# beautiful-nextjs-boilerplate
+# Nextjs-boilerplate
