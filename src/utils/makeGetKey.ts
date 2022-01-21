@@ -4,4 +4,4 @@
  */
 
 export const makeGetKey = (domain: string) => (key: string) =>
-  `${typeof window === 'undefined' && '_'}${domain}-${key}`;
+  `${typeof window === 'undefined' ? '_' : ''}${domain}-${key}`;
