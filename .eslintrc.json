@@ -12,7 +12,7 @@
       { "usePrettierrc": true }
     ],
     "no-undef": "off",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
     "react-hooks/exhaustive-deps": "off",
     "@next/next/no-img-element": "off"
   },
