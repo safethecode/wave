@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
+import { clsx } from 'clsx';
 
-import classNames from 'classnames/bind';
 import styles from './GNBLayout.module.scss';
 
 const cx = classNames.bind(styles);
@@ -10,5 +10,5 @@ interface GNBLayoutProps {
 }
 
 export const GNBLayout = ({ children }: GNBLayoutProps) => {
-  return <main className={cx('wrap')}>{children}</main>;
+  return <main className={clsx(styles.wrap)}>{children}</main>;
 };

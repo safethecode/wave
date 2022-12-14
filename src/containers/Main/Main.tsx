@@ -1,13 +1,12 @@
 import { GNBLayout } from 'components/Layouts';
-import classNames from 'classnames/bind';
-import styles from './Main.module.scss';
+import { clsx } from 'clsx';
 
-const cx = classNames.bind(styles);
+import styles from './Main.module.scss';
 
 export const Main = () => {
   return (
     <GNBLayout>
-      <div className={cx('wrapper')}>
+      <div className={clsx(styles.wrap)}>
         <h1>Hello World</h1>
       </div>
     </GNBLayout>
