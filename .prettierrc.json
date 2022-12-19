@@ -8,6 +8,5 @@
   "semi": true,
   "arrowParens": "always",
   "endOfLine": "auto",
-  "jsxBracketSameLine": false,
   "jsxSingleQuote": false
 }

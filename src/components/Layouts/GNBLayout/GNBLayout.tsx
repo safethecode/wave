@@ -1,14 +1,20 @@
 import { ReactNode } from 'react';
-
-import classNames from 'classnames/bind';
-import styles from './GNBLayout.module.scss';
-
-const cx = classNames.bind(styles);
+import { styled } from 'styles/stitches';
 
 interface GNBLayoutProps {
   children: ReactNode;
 }
 
+const GNB = styled('main', {
+  position: 'relative',
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
+  height: '100%',
+  flexFlow: 'column nowrap',
+  margin: '0 auto',
+});
+
 export const GNBLayout = ({ children }: GNBLayoutProps) => {
-  return <main className={cx('wrap')}>{children}</main>;
+  return <GNB>{children}</GNB>;
 };

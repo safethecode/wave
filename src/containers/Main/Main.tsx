@@ -1,15 +1,18 @@
 import { GNBLayout } from 'components/Layouts';
-import classNames from 'classnames/bind';
-import styles from './Main.module.scss';
+import { styled } from 'styles/stitches';
 
-const cx = classNames.bind(styles);
+const Wrapper = styled('main', {
+  position: 'relative',
+  width: '100%',
+  height: '100%',
+});
 
 export const Main = () => {
   return (
     <GNBLayout>
-      <div className={cx('wrapper')}>
+      <Wrapper>
         <h1>Hello World</h1>
-      </div>
+      </Wrapper>
     </GNBLayout>
   );
 };

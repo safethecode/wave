@@ -1,26 +1,17 @@
-/** @type {import('next').NextConfig} */
-const path = require('path');
+/* eslint-disable @typescript-eslint/no-var-requires */
 
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+/** @type {import('next').NextConfig} */
+
+const path = require('path');
 
 module.exports = {
   reactStrictMode: true,
-  pwa: {
-    disable: true,
-    dest: 'public',
-  },
   typescript: {},
   distDir: '.next',
-  webpack(config, options) {
-    const { dev, isServer } = options;
-    if (dev && isServer) {
-      config.plugins.push(new ForkTsCheckerWebpackPlugin());
-    }
-    return config;
-  },
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles')],
     prependData: `@import "./lib/variables.scss";`,
   },
   trailingSlash: true,
+  swcMinify: true,
 };
