@@ -21,7 +21,10 @@
     "types": [
       "jest"
     ],
-    "incremental": true
+    "paths": {
+      "stitches.config": ["../stitches.config.ts"],
+    },
+    "incremental": true,
   },
   "include": [
     "next-env.d.ts",
