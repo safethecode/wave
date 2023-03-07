@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosPromise } from 'axios';
 import type * as Api from 'common';
 
-interface requestApiOptions {
+interface RequestApiOptions {
   /**
    * Axios Instance
    */
@@ -12,10 +12,10 @@ interface requestApiOptions {
    * @type {todoResponse}
    * @method GET
    */
-  readonly getTodoList: () => AxiosPromise<Api.todoResponse>;
+  readonly getTodoList: () => AxiosPromise<Api.TodoResponse>;
 }
 
-export const Client = (): requestApiOptions => {
+export const Client = (): RequestApiOptions => {
   const client = axios.create({
     baseURL: `${process.env.NEXT_PUBLIC_API_URL}`,
   });
