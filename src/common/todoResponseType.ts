@@ -1,4 +1,4 @@
-export interface todoResponse {
+export interface TodoResponse {
   userId: number;
   id: number;
   title: string;
