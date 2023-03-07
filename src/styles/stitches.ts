@@ -172,7 +172,7 @@ export const {
     },
     fonts: {
       sans: 'Noto Sans KR, sans-serif',
-    }
+    },
   },
   utils: {
     p: (value: Stitches.PropertyValue<'padding'>) => ({
